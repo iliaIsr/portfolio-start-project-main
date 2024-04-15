@@ -3,6 +3,7 @@ import styled from "styled-components";
 import photo from '../../../assets/images/photo.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
+
 export const Main = () => {
     return (
         <StyledMain>
@@ -19,9 +20,12 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     min-height: 100vh;
-    background-color: #fcfc5d;
+    background-color: yellow;
+    
+    
+   
 `
 export const Photo = styled.img`
     width: 350px;
