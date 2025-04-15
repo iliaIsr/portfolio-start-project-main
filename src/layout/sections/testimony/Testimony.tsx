@@ -5,17 +5,17 @@ import {Icon} from "../../../components/icon/Icon";
 import {Slider} from "../../../components/slider/Slider";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
-import {IconWrapper} from "../skills/Skills_Styles";
+import {S} from '../skills/Skills_Styles'
 
-export const Testimony = () => {
+export const Testimony:React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <IconWrapper>
+                    <S.IconWrapper>
                         <Icon iconId={"quote"}/>
-                    </IconWrapper>
+                    </S.IconWrapper>
                     <Slider/>
                 </FlexWrapper>
             </Container>
@@ -29,7 +29,7 @@ const StyledTestimony = styled.section`
     background-color: #becaf8;
     min-height: 50vh;
     
-    ${IconWrapper} {
+    ${S.IconWrapper} {
         margin: 40px 0 72px;
     }
 `
